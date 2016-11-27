@@ -1,0 +1,56 @@
+<div class="content">
+    <toolbar style="width:100%"></toolbar>
+    <div class="ui-g">
+        <form>
+            <div class="ui-g-3">
+                <label>
+                    <span class="text-exp">地点编码</span>
+                    <input type="text">
+                </label>
+            </div>
+            <div class="ui-g-3">
+                <label>
+                    <span class="text-exp">地点名称</span>
+                    <input type="text">
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="ui-g tabs-wrap">
+        <ul class="tabs">
+            <li class="tabs-selected">
+                <a href="javascript:void(0)" class="tabs-inner">编辑地点信息</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ui-g condiv">
+        <form #myform="ngForm">
+            <div class="ui-g">
+                <div class="ui-g-3">
+                    <label>
+                        <span class="text-exp">*地点编码</span>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="ui-g-3">
+                    <label>
+                        <span class="text-exp">*地点名称</span>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="ui-g-3">
+                    <label>
+                        <span class="text-exp">*公司名称</span>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="ui-g-3">
+                    <div>
+                        <span class="text-exp">*仓库级别</span>
+                        <p-dropdown [options]="ckbj" [(ngModel)]="selected" name="CKID"></p-dropdown>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+.navbar-header{
+    width: 200px;
+}
+.navbar-collapse{
+    flex: 1;
+}
